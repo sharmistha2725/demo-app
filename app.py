@@ -6,7 +6,7 @@ from PIL import Image
 st.set_page_config(page_title="EduGenius AI", layout="wide")
 
 # Title & Description
-st.title("Personalized AI Tutor")
+st.title("EDUGENIUS AI")
 st.write("An AI-powered tutor that provides **instant explanations, auto-corrects assignments, and adapts to your learning style.**")
 
 # Sidebar Menu
@@ -16,7 +16,7 @@ menu = st.sidebar.radio("Go to", ["Ask a Question", "Upload Assignment", "Learni
 # Section: Ask a Question
 if menu == "Ask a Question":
     st.subheader("Question")
-    user_question = st.text_area("Tye your question")
+    user_question = st.text_area("question")
 
     if st.button("Get Answer"):
         if user_question:
